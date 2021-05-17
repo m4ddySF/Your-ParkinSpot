@@ -5,16 +5,18 @@
  *  Ultrasonic Sensor is connected to the 0-D3-Echo, 2-D4-Trig pins.
  *  IR sensor is connected to 15-D5-Out pin.
  *  Sends parking-lot status as 0 or 1 to firebase's realtime database.
+ *  NOTE- Arduino IDE 1.8.7, ArduinoJSON 5.13.0, FirebaseArduino 0.3 used. 
+ *  Change the Fingerprint of the Realtime DB to the current one(with ":") in the firebasearduino->src->FirebaseHttpClient.h
 */
 
 #include <ESP8266WiFi.h>
 #include <FirebaseArduino.h>
 
 
-#define WIFI_SSID "poco_f1"
-#define WIFI_PASSWORD "zxcqwerty@7890"
-#define FIREBASE_HOST "your-parkinspot-default-rtdb.firebaseio.com"
-#define FIREBASE_AUTH "YXrqRHzpbEpwQLHaSPb25Y2vMSURviEuy1HcDnQh"
+#define WIFI_SSID "???"
+#define WIFI_PASSWORD "???"
+#define FIREBASE_HOST "???.firebaseio.com" //Realtime Database's link
+#define FIREBASE_AUTH "???" // Realtime DB's Secret
 
 
 const int trigPin = 2;  //D4
